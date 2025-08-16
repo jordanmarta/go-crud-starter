@@ -18,14 +18,6 @@ func (uc *userControllerInterface) FindUserByID(c *gin.Context) {
 	logger.Info("Init findUserByID Controller",
 		zap.String("journey", "findUserByID"))
 
-	user, err := model.VerifyToken(c.Request.Header.Get("Authorization"))
-	if err != nil {
-		c.JSON(err.Code, err)
-		return
-	}
-
-	logger.Info(fmt.Sprintf("User authenticated: %#v", user))
-
 	userId := c.Param("userId")
 
 	if _, err := primitive.ObjectIDFromHex(userId); err != nil {
