@@ -4,6 +4,8 @@ import (
 	"context"
 	"log"
 
+	_ "github.com/jordanmarta/go-crud-starter/docs"
+
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	mongodb "github.com/jordanmarta/go-crud-starter/src/configuration/database"
@@ -11,6 +13,13 @@ import (
 	"github.com/jordanmarta/go-crud-starter/src/controller/routes"
 )
 
+// @title Meu Primeiro CRUD em Go | HunCoding
+// @version 1.0
+// @description API for crud operations on users
+// @host localhost:8080
+// @BasePath /
+// @schemes http
+// @license MIT
 func main() {
 
 	logger.Info("About to start user application")
