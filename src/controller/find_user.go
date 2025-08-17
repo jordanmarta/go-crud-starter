@@ -1,14 +1,12 @@
 package controller
 
 import (
-	"fmt"
 	"net/http"
 	"net/mail"
 
 	"github.com/gin-gonic/gin"
 	rest_err "github.com/jordanmarta/go-crud-starter/src/configuration"
 	"github.com/jordanmarta/go-crud-starter/src/configuration/logger"
-	"github.com/jordanmarta/go-crud-starter/src/model"
 	"github.com/jordanmarta/go-crud-starter/src/view"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.uber.org/zap"
@@ -48,14 +46,6 @@ func (uc *userControllerInterface) FindUserByID(c *gin.Context) {
 func (uc *userControllerInterface) FindUserByEmail(c *gin.Context) {
 	logger.Info("Init findUserByEmail Controller",
 		zap.String("journey", "findUserByEmail"))
-
-	user, err := model.VerifyToken(c.Request.Header.Get("Authorization"))
-	if err != nil {
-		c.JSON(err.Code, err)
-		return
-	}
-
-	logger.Info(fmt.Sprintf("User authenticated: %#v", user))
 
 	userEmail := c.Param("userEmail")
 
