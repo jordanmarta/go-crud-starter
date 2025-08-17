@@ -6,9 +6,7 @@ import (
 	"github.com/jordanmarta/go-crud-starter/src/model/repository"
 )
 
-func NewUserDomainService(
-	userRepository repository.UserRepository,
-) UserDomainService {
+func NewUserDomainService(userRepository repository.UserRepository) UserDomainService {
 	return &userDomainService{userRepository}
 }
 
