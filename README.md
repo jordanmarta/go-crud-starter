@@ -1,10 +1,10 @@
 # go-crud-starter
 
-Uma API REST minimalista em Go com operações CRUD para usuários, utilizando MongoDB e pronta para Docker.
+Uma API REST em Go com operações CRUD para usuários, utilizando MongoDB e pronta para Docker.
 
 ---
 
-## Tecnologias & Bibliotecas
+## Algumas tecnologias e bibliotecas utilizadas
 
 - Go 1.18+  
 - gin-gonic/gin (roteador HTTP)  
@@ -23,7 +23,7 @@ Uma API REST minimalista em Go com operações CRUD para usuários, utilizando M
 
 ---
 
-## Início Rápido
+## Como usar
 
 1. Clone o repositório  
    ```bash
