@@ -1,50 +1,50 @@
 # go-crud-starter
 
-A minimal Go REST API with CRUD operations for users, backed by MongoDB and Docker-ready.
+Uma API REST minimalista em Go com operações CRUD para usuários, utilizando MongoDB e pronta para Docker.
 
 ---
 
-## Technologies & Libraries
+## Tecnologias & Bibliotecas
 
 - Go 1.18+  
-- gin-gonic/gin              (HTTP router)  
-- go.mongodb.org/mongo-driver (MongoDB client)  
-- go.uber.org/zap            (structured logging)  
-- github.com/go-playground/validator/v10 (request validation)  
-- github.com/swaggo/http-swagger (Swagger UI)  
-- github.com/stretchr/testify  (unit testing)
+- gin-gonic/gin (roteador HTTP)  
+- go.mongodb.org/mongo-driver (cliente MongoDB)  
+- go.uber.org/zap (log estruturado)  
+- github.com/go-playground/validator/v10 (validação de requisições)  
+- github.com/swaggo/http-swagger (interface Swagger UI)  
+- github.com/stretchr/testify (testes unitários)
 
 ---
 
-## Prerequisites
+## Pré-requisitos
 
-- Go
-- Docker
+- Go  
+- Docker  
 
 ---
 
-## Quick Start
+## Início Rápido
 
-1. Clone the repo  
+1. Clone o repositório  
    ```bash
    git clone https://github.com/jordanmarta/go-crud-starter.git
    cd go-crud-starter
    ```
 
-2. Launch MongoDB and the app  
+2. Inicie o MongoDB e a aplicação  
    ```bash
    docker compose up
    go run main.go
    ```
 
-3. Open in your browser  
+3. Acesse no navegador  
    ```
    http://localhost:8080
    ```
 
 ---
 
-## API Endpoints
+## Endpoints da API
 
 - **POST**   /createUser  
 - **GET**    /getUserById/{userId}  
@@ -53,20 +53,19 @@ A minimal Go REST API with CRUD operations for users, backed by MongoDB and Dock
 - **DELETE** /deleteUser/{userId}  
 - **POST**   /login  
 
-Explore and test via Swagger UI:  
+Explore e teste via Swagger UI:  
 ```
 http://localhost:8080/swagger/index.html
 ```
 
 ---
 
-## Credit
+## Créditos
 
-This project follows the HunCoding tutorial series:  
+Este projeto foi baseado na série de tutoriais do canal HunCoding:  
 https://www.youtube.com/watch?v=vxDqv6BKZCw&list=PLm-xZWCprwYQ3gyCxJ8TR1L2ZnUOPvOpr  
 
-Original repository by HunCoding:  
+Repositório original do HunCoding:  
 https://github.com/HunCoding/meu-primeiro-crud-go
 
 ---
-
