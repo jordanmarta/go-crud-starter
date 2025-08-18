@@ -1,6 +1,6 @@
 # go-crud-starter
 
-Uma API REST em Go com operações CRUD para usuários, utilizando MongoDB e pronta para Docker.
+Uma API REST em Go com operações CRUD utilizando o framework Gin, MongoDB, Docker, validações de input de dados, testes de unidade, testes de integração e etc.
 
 ---
 
